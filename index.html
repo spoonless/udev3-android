@@ -1,0 +1,503 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="David Gayerie" name="author" />
+<meta content="Développement d'application Android" name="description" />
+<meta content="android, android studio, java, programmation objet" name="keywords" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sommaire &mdash; Documentation U&#39;Dev </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom_rtd_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Une première application" href="android/premiere_app.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> U'Dev
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Recherche dans les pages" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Développement d'applications pour Android</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="android/premiere_app.html">Une première application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="android/premiere_app.html#creation-d-une-application-simple">Création d’une application simple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/premiere_app.html#organisation-du-projet">Organisation du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/premiere_app.html#lancement-de-l-application">Lancement de l’application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/premiere_app.html#l-emulateur-android">L’émulateur Android</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/premiere_app.html#notion-d-activite">Notion d’activité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/premiere_app.html#notion-de-ressources">Notion de ressources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/premiere_app.html#acceder-a-un-identifiant-de-ressource-depuis-le-code-java">Accéder à un identifiant de ressource depuis le code Java</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/premiere_app.html#acceder-a-une-ressource-depuis-une-autre-ressource">Accéder à une ressource depuis une autre ressource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/premiere_app.html#identifier-une-ressource-dans-un-layout">Identifier une ressource dans un layout</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/premiere_app.html#exercices">Exercices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/premiere_app.html#le-fichier-androidmanifest-xml">Le fichier AndroidManifest.xml</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="android/ui_layout.html">Conception d’interfaces graphiques</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#view-et-layout">View et Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#layout-xml">Layout XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#layout-lineaire-et-positionnement">Layout linéaire et positionnement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#techniques-avancees-de-positionnement-dans-un-layout">Techniques avancées de positionnement dans un layout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#layout-margin-et-padding">layout_margin et padding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#layout-gravity-et-gravity">layout_gravity et gravity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#layout-weight">layout_weight</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#layout-par-contraintes">Layout par contraintes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#ajouter-une-image">Ajouter une image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#exemple-de-formulaire">Exemple de formulaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#la-barre-d-action">La barre d’action</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#creer-un-menu-dans-la-barre-d-action">Créer un menu dans la barre d’action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#associer-un-menu-a-une-activite">Associer un menu à une activité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#implementer-les-actions-associees-aux-items-de-menu">Implémenter les actions associées aux items de menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#les-boites-de-dialogue">Les boites de dialogue</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#boite-de-dialogue-avec-boutons">Boite de dialogue avec boutons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#boite-de-dialogue-avec-choix">Boite de dialogue avec choix</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/ui_layout.html#message-a-l-utilisateur">Message à l’utilisateur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#toast">Toast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/ui_layout.html#snackbar">Snackbar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="android/activity.html">Les activités</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="android/activity.html#le-cycle-de-vie">Le cycle de vie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/activity.html#terminer-une-activite">Terminer une activité</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/activity.html#gestion-de-l-etat-d-une-activite">Gestion de l’état d’une activité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/activity.html#notion-d-intent">Notion d’intent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/activity.html#associer-une-activite-a-un-intent">Associer une activité à un intent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/activity.html#emettre-un-intent-implicite">Émettre un intent implicite</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="android/activity_stack.html">Gestion des activités d’une application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="android/activity_stack.html#l-application-de-demo">L’application de démo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/activity_stack.html#structure-de-l-application">Structure de l’application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/activity_stack.html#l-activite-principale-et-recyclerview">L’activité principale et RecyclerView</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/activity_stack.html#detail-d-une-occupation-et-pile-des-activites">Détail d’une occupation et pile des activités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/activity_stack.html#ouverture-d-une-activite-intent-explicite">Ouverture d’une activité (intent explicite)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/activity_stack.html#strategie-de-gestion-de-la-pile-des-activites">Stratégie de gestion de la pile des activités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/activity_stack.html#terminer-une-activite">Terminer une activité</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="android/broadcast.html">Gestion des messages broadcast</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="android/broadcast.html#le-broadcastreceiver">Le BroadcastReceiver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/broadcast.html#suivre-le-branchement-sur-secteur">Suivre le branchement sur secteur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/broadcast.html#suivre-l-etat-de-la-connexion-wifi">Suivre l’état de la connexion Wifi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/broadcast.html#recevoir-des-broadcasts-depuis-une-activite">Recevoir des broadcasts depuis une activité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/broadcast.html#emettre-un-message-broadcast">Émettre un message broadcast</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="android/acces_web.html">Accès Web</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="android/acces_web.html#permission-pour-l-acces-internet">Permission pour l’accès Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/acces_web.html#utilisation-de-la-classe-url">Utilisation de la classe URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android/acces_web.html#utilisation-de-la-bibliotheque-volley">Utilisation de la bibliothèque Volley</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/acces_web.html#ajout-de-la-dependance">Ajout de la dépendance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/acces_web.html#emission-d-une-requete">Émission d’une requête</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/acces_web.html#emission-d-une-requete-pour-une-reponse-json">Émission d’une requête pour une réponse JSON</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="android/service.html">Les services Android</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="android/service.html#service-en-tache-de-fond">Service en tâche de fond</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#implementation-et-declaration-du-service">Implémentation et déclaration du service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#le-cycle-de-vie">Le cycle de vie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#execution-en-tache-de-fond">Exécution en tâche de fond</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#interaction-avec-l-utilisateur">Interaction avec l’utilisateur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#lancement-du-service">Lancement du service</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="android/service.html#service-lie">Service lié</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#declaration-du-service">Déclaration du service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#id1">Le cycle de vie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#implementation-de-la-methode-onbind">Implémentation de la méthode onBind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="android/service.html#lier-le-service-a-une-activite">Lier le service à une activité</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">U'Dev</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Accueil</a> &raquo;</li>
+        
+      <li>Sommaire</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="android/premiere_app.html" class="btn btn-neutral float-right" title="Une première application" accesskey="n">Suivant <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sommaire">
+<h1>Sommaire<a class="headerlink" href="#sommaire" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Développement d'applications pour Android</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="android/premiere_app.html">Une première application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android/ui_layout.html">Conception d’interfaces graphiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android/activity.html">Les activités</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android/activity_stack.html">Gestion des activités d’une application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android/broadcast.html">Gestion des messages broadcast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android/acces_web.html">Accès Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android/service.html">Les services Android</a></li>
+</ul>
+</div>
+<div class="section" id="projet-application-d-enchere">
+<h2>Projet : application d’enchère<a class="headerlink" href="#projet-application-d-enchere" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Tout au long de ce module, nous allons concevoir et réaliser une application
+mobile par étapes.</p>
+<p>On souhaite développer une application mobile pour permettre de réaliser
+des enchères en ligne. À terme, l’application mobile se connectera à un
+serveur pour connaître l’enchère en cours et permettre à l’utilisateur
+d’enchérir. Une enchère est limitée dans le temps. Lorsqu’elle se termine, une
+nouvelle commence.</p>
+<p>Le serveur est disponible en ligne. Vous devez implémenter l’application mobile
+en suivant les étapes ci-dessous.</p>
+<div class="exercice admonition">
+<p class="admonition-title">Application mobile d’enchère (partie 1)</p>
+<p><strong>Saisie des paramètres utilisateur</strong></p>
+<p>Vous devez développer une activité pour la saisie des paramètres d’un
+utilisateur. Un utilisateur dispose des paramètres suivants :</p>
+<dl>
+<dt>pseudo</dt><dd><p>Un pseudo permet d’identifier l’utilisateur. Le pseudo est obligatoire.
+Pour simplifier les développements, il n’y aura pas de contrôle pour
+vérifier si le pseudo est disponible sur le serveur.</p>
+</dd>
+<dt>niveau d’enchère</dt><dd><p>Le niveau d’enchère est un pourcentage pour calculer le montant de
+l’enchère qui sera proposé. Par exemple, si l’utilisateur à un niveau
+d’enchère de 10%. Lorsqu’il souhaite enchérir sur un produit dans le prix
+initial est de 100 euros, il réalisera une enchère de 10 euros.</p>
+</dd>
+<dt>plafond d’enchère</dt><dd><p>Le plafond d’enchère est un multiplicateur qui permet de calculer le
+montant maximal qu’un utilisateur ne souhaite pas dépasser. Les valeurs
+possibles pour un plafond d’enchère sont : x2, x3, x4, x5.</p>
+<p>Si un utilisateur à un plafond d’enchère de x3, cela signifie que, pour
+un produit dont le prix initial est de 100 euros, l’utilisateur ne souhaite
+pas enchérir au delà de 300 euros.</p>
+</dd>
+<dt>activation du plafond d’enchère</dt><dd><p>L’utilisateur peut activer ou désactiver l’utilisation du plafond d’enchère.
+Si le plafond est désactivé, l’utilisateur pourra renchérir quel que soit
+le montant actuel de l’enchère</p>
+</dd>
+</dl>
+<p>Pour cette première partie, vous devez créer l’activité permettant de saisir
+les paramètres. Vous devez également gérer la validation du formulaire.
+Le pseudo est obligatoire, le niveau d’enchère est obligatoire, le plafond
+d’enchère n’est obligatoire que s’il est activé.</p>
+<p>Pour cette première partie, les données ne sont pas sauvegardées.</p>
+</div>
+<div class="exercice admonition">
+<p class="admonition-title">Application mobile d’enchère (partie 2)</p>
+<p><strong>Sauvegarde et chargement des paramètres utilisateur</strong></p>
+<p>Vous sauverez les paramètres de l’utilisateur dans un fichier sur le
+téléphone. Lorsque l’activité s’affiche, elle doit afficher les paramètres
+précédemment sauvegardées (s’ils existent).</p>
+<p>Pour écrire et lire un fichier dans le répertoire privé de l’application, vous
+pouvez utiliser les méthodes <a class="reference external" href="https://developer.android.com/reference/android/content/Context#openFileOutput(java.lang.String,%20int)">openFileOutput</a> (utilisez <a class="reference external" href="https://developer.android.com/reference/android/content/Context#MODE_PRIVATE">MODE_PRIVATE</a> comme
+second paramètre) et <a class="reference external" href="https://developer.android.com/reference/android/content/Context#openFileInput(java.lang.String)">openFileInput</a> accessibles depuis une activité. Vous
+êtes libre d’utiliser le format de fichier que vous souhaitez. Il est possible
+d’utiliser un fichier <a class="reference external" href="https://developer.android.com/reference/java/util/Properties">Properties</a> Java en utilisant les méthodes <a class="reference external" href="https://developer.android.com/reference/java/util/Properties#store(java.io.OutputStream,%20java.lang.String)">store</a> et
+<a class="reference external" href="https://developer.android.com/reference/java/util/Properties#load(java.io.InputStream)">load</a>.</p>
+</div>
+<div class="exercice admonition">
+<p class="admonition-title">Application mobile d’enchère (partie 3)</p>
+<p><strong>Affichage de l’enchère en cours</strong></p>
+<p>Ajoutez une activité pour l’enchère en cours. À terme, une enchère
+contiendra une description du produit, la photo du produit, le prix de base,
+le prix actuel, le pseudo de la personne qui a enchéri le plus (s’il y a déjà
+eu un enchérisseur) et le temps restant avec la fin de l’enchère. Ces
+informations seront fournies par le serveur dans la partie suivante. Pour
+cette partie, on se contentera d’afficher des données en dur.</p>
+<p>Vous devez mettre en place un enchaînement entre les activités. Vous devez
+<strong>respecter une seule règle</strong> : il n’est pas possible d’afficher l’activité
+de l’enchère tant que les paramètres utilisateur n’ont pas été correctement
+saisis.</p>
+</div>
+<div class="exercice admonition">
+<p class="admonition-title">Application mobile d’enchère (partie 4)</p>
+<p><strong>Affichage de l’enchère en cours à partir des données du serveur</strong></p>
+<p>Faites évoluer l’activité de l’enchère en cours pour afficher les données
+récupérées depuis le serveur.</p>
+<p>Les données pour l’enchère en cours sont disponibles en envoyant une requête
+<code class="docutils literal notranslate"><span class="pre">GET</span></code> à l’adresse</p>
+<blockquote>
+<div><p><a class="reference external" href="https://url.serveur.com">https://url.serveur.com</a>/enchere</p>
+</div></blockquote>
+<p>Les données sont récupérées au format JSON :</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;produit&quot;</span><span class="p">:</span> <span class="s2">&quot;description du produit&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url_image&quot;</span><span class="p">:</span> <span class="s2">&quot;URL de l&#39;image du produit&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url_enchere&quot;</span><span class="p">:</span> <span class="s2">&quot;URL pour réaliser une enchère&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;prix_base&quot;</span><span class="p">:</span> <span class="mf">100.00</span><span class="p">,</span>
+    <span class="nt">&quot;prix_actuel&quot;</span><span class="p">:</span> <span class="mf">150.00</span><span class="p">,</span>
+    <span class="nt">&quot;encherisseur&quot;</span><span class="p">:</span> <span class="s2">&quot;spoonless&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;temps_restant&quot;</span><span class="p">:</span> <span class="mi">1353</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Le champ <code class="docutils literal notranslate"><span class="pre">encherisseur</span></code> peut être vide si personne n’a encore enchéri
+pour ce produit. Le champ <code class="docutils literal notranslate"><span class="pre">temps</span> <span class="pre">restant</span></code> indique le nombre de secondes
+avant la fin de l’enchère. Quand une enchère est terminée, ce champ vaut 0.</p>
+</div>
+<div class="exercice admonition">
+<p class="admonition-title">Application mobile d’enchère (partie 5)</p>
+<p><strong>Enchérir sur le produit en cours</strong></p>
+<p>Faites évoluer l’activité de l’enchère en cours pour afficher une bouton
+permettant d’enchérir. Le libellé du bouton est <span class="guilabel">Enchérir de XX.XX €</span>.
+<span class="guilabel">XX.XX</span> correspond à la valeur de l’enchère. Elle est calculée selon
+la formule :</p>
+<blockquote>
+<div><p>enchere = prix_base * niveau_enchère</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">prix_base</span></code> est le prix fourni par l’enchère et <code class="docutils literal notranslate"><span class="pre">niveau_enchère</span></code> est
+un pourcentage sauvegardé dans les paramètres de l’utilisateur.</p>
+<p>Pour réaliser un enchère, il faut envoyer une requête <code class="docutils literal notranslate"><span class="pre">POST</span></code> à l’adresse
+fournie par le champ <code class="docutils literal notranslate"><span class="pre">url_enchere</span></code> dans la description de l’enchère.</p>
+<p>Il faut transmettre le pseudo et le montant (prix actuel + enchere) au format JSON :</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;pseudo&quot;</span><span class="p">:</span> <span class="s2">&quot;spoonless&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;prix&quot;</span><span class="p">:</span> <span class="mf">160.0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>En réponse, le serveur retourne les données de l’enchère mises à jour afin
+de pouvoir rafraîchir les champs de l’activité.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’appel peut échouer avec un code statut <code class="docutils literal notranslate"><span class="pre">404</span></code> si le produit n’est
+plus disponible ou <code class="docutils literal notranslate"><span class="pre">400</span></code> si l’enchère est terminée.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Pensez à griser le bouton d’enchère si le plafond d’enchère est
+activé dans les paramètres utilisateur et que le prix dépasse le
+plafond d’enchère.</p>
+</div>
+</div>
+<div class="exercice admonition">
+<p class="admonition-title">Application mobile d’enchère (partie 6)</p>
+<p><strong>Mise à jour des informations de l’enchère</strong></p>
+<p>Faites évoluer l’activité de l’enchère en cours afin de recharger régulièrement
+les informations depuis le serveur pour tenir l’utilisateur au courant
+de l’évolution des enchères.</p>
+<p>Pour cela, vous pouvez utiliser un <a class="reference external" href="https://developer.android.com/reference/java/util/Timer">Timer</a> afin d’interroger le serveur toutes
+les 10 secondes.</p>
+<p>Pour récupérer les données de l’enchère, vous devez faire une requête
+<code class="docutils literal notranslate"><span class="pre">GET</span></code> à l’adresse fournie par le champ <code class="docutils literal notranslate"><span class="pre">url_enchere</span></code>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Si le temps restant de l’enchère vaut 0, cela signifie que les enchères
+pour ce produit sont terminées. Signalez-le à l’utilisateur et affichez
+les informations sur l’enchère suivante que vous obtiendrez en faisant
+une requête <code class="docutils literal notranslate"><span class="pre">GET</span></code> à l’adresse :</p>
+<blockquote>
+<div><p><a class="reference external" href="https://url.serveur.com">https://url.serveur.com</a>/enchere</p>
+</div></blockquote>
+</div>
+</div>
+<div class="exercice admonition">
+<p class="admonition-title">Application mobile d’enchère (partie 7)</p>
+<p><strong>Notifier l’utilisateur de la fin de l’enchère</strong></p>
+<p>À la fin de l’enchère, l’utilisateur doit recevoir une notification pour
+lui indiquer que l’enchère est terminée et s’il l’a remportée.</p>
+<p>Vous devez développer un service Android qui sera lancé en tâche de fond au
+moment de la première enchère faite par l’utilisateur. Ce service attend le
+nombre de secondes restantes pour l’enchère puis, il peut récupérer les
+informations de l’enchère à l’adresse fourni par le champ <code class="docutils literal notranslate"><span class="pre">url_enchere</span></code>.
+Il vérifie le pseudo de la personne qui a gagné l’enchère et notifie
+l’utilisateur en conséquence.</p>
+</div>
+<p>Cette œuvre est mise à disposition selon les termes de la <a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/fr/">Licence Creative Commons Attribution</a> -  Partage dans les Mêmes Conditions 3.0 France</p>
+<a class="reference external image-reference" href="https://creativecommons.org/licenses/by-sa/3.0/fr/"><img alt="Licence Creative Commons" src="https://i.creativecommons.org/l/by-sa/3.0/fr/88x31.png" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="android/premiere_app.html" class="btn btn-neutral float-right" title="Une première application" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright David Gayerie - david.gayerie@reseau-cd.net - CC-BY-SA
+
+    </p>
+  </div>
+    <div>Téléchargez ce support au format <a class="reference download" href="https://github.com/spoonless/udev3-android/archive/gh-pages.zip">HTML</a>
+    </div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
