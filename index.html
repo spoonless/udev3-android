@@ -344,7 +344,7 @@ d’utiliser un fichier <a class="reference external" href="https://developer.an
 <p>Ajoutez une activité pour l’enchère en cours. À terme, une enchère
 contiendra une description du produit, la photo du produit, le prix de base,
 le prix actuel, le pseudo de la personne qui a enchéri le plus (s’il y a déjà
-eu un enchérisseur) et le temps restant avec la fin de l’enchère. Ces
+eu un acheteur) et le temps restant avec la fin de l’enchère. Ces
 informations seront fournies par le serveur dans la partie suivante. Pour
 cette partie, on se contentera d’afficher des données en dur.</p>
 <p>Vous devez mettre en place un enchaînement entre les activités. Vous devez
@@ -360,7 +360,7 @@ récupérées depuis le serveur.</p>
 <p>Les données pour l’enchère en cours sont disponibles en envoyant une requête
 <code class="docutils literal notranslate"><span class="pre">GET</span></code> à l’adresse</p>
 <blockquote>
-<div><p><a class="reference external" href="https://url.serveur.com">https://url.serveur.com</a>/enchere</p>
+<div><p><a class="reference external" href="https://adjuge.herokuapp.com/enchere">https://adjuge.herokuapp.com/enchere</a></p>
 </div></blockquote>
 <p>Les données sont récupérées au format JSON :</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -369,12 +369,12 @@ récupérées depuis le serveur.</p>
     <span class="nt">&quot;url_enchere&quot;</span><span class="p">:</span> <span class="s2">&quot;URL pour réaliser une enchère&quot;</span><span class="p">,</span>
     <span class="nt">&quot;prix_base&quot;</span><span class="p">:</span> <span class="mf">100.00</span><span class="p">,</span>
     <span class="nt">&quot;prix_actuel&quot;</span><span class="p">:</span> <span class="mf">150.00</span><span class="p">,</span>
-    <span class="nt">&quot;encherisseur&quot;</span><span class="p">:</span> <span class="s2">&quot;spoonless&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;acheteur&quot;</span><span class="p">:</span> <span class="s2">&quot;spoonless&quot;</span><span class="p">,</span>
     <span class="nt">&quot;temps_restant&quot;</span><span class="p">:</span> <span class="mi">1353</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Le champ <code class="docutils literal notranslate"><span class="pre">encherisseur</span></code> peut être vide si personne n’a encore enchéri
+<p>Le champ <code class="docutils literal notranslate"><span class="pre">acheteur</span></code> peut être vide si personne n’a encore enchéri
 pour ce produit. Le champ <code class="docutils literal notranslate"><span class="pre">temps</span> <span class="pre">restant</span></code> indique le nombre de secondes
 avant la fin de l’enchère. Quand une enchère est terminée, ce champ vaut 0.</p>
 </div>
@@ -390,7 +390,7 @@ la formule :</p>
 </div></blockquote>
 <p><code class="docutils literal notranslate"><span class="pre">prix_base</span></code> est le prix fourni par l’enchère et <code class="docutils literal notranslate"><span class="pre">niveau_enchère</span></code> est
 un pourcentage sauvegardé dans les paramètres de l’utilisateur.</p>
-<p>Pour réaliser un enchère, il faut envoyer une requête <code class="docutils literal notranslate"><span class="pre">POST</span></code> à l’adresse
+<p>Pour réaliser une enchère, il faut envoyer une requête <code class="docutils literal notranslate"><span class="pre">POST</span></code> à l’adresse
 fournie par le champ <code class="docutils literal notranslate"><span class="pre">url_enchere</span></code> dans la description de l’enchère.</p>
 <p>Il faut transmettre le pseudo et le montant (prix actuel + enchere) au format JSON :</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -430,7 +430,7 @@ pour ce produit sont terminées. Signalez-le à l’utilisateur et affichez
 les informations sur l’enchère suivante que vous obtiendrez en faisant
 une requête <code class="docutils literal notranslate"><span class="pre">GET</span></code> à l’adresse :</p>
 <blockquote>
-<div><p><a class="reference external" href="https://url.serveur.com">https://url.serveur.com</a>/enchere</p>
+<div><p><a class="reference external" href="https://adjuge.herokuapp.com/enchere">https://adjuge.herokuapp.com/enchere</a></p>
 </div></blockquote>
 </div>
 </div>

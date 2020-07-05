@@ -272,6 +272,11 @@
             
   <div class="section" id="les-activites">
 <span id="activity"></span><h1>Les activités<a class="headerlink" href="#les-activites" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="exercice admonition">
+<p class="admonition-title">Le projet d’exemple pour ce chapitre</p>
+<p>Vous pouvez télécharger le projet servant d’exemple pour ce chapitre :
+<a class="reference download internal" download="" href="../_downloads/41faab03c45a51d91616de53c4340567/android-demo-activite.zip"><code class="xref download docutils literal notranslate"><span class="pre">android-demo-activite.zip</span></code></a></p>
+</div>
 <p>Une activité (<em>activity</em>) représente un écran dans une application Android. Nous
 avons vu au chapitre précédent que l’emploi des <em>layouts</em> permet de garantir
 un rendu adapté selon le type d’appareil et les dimensions de l’écran.</p>
@@ -607,7 +612,7 @@ vaut <code class="docutils literal notranslate"><span class="pre">null</span></c
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Override</span>
 <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-    <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_simple_click</span><span class="o">);</span>
+    <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
     <span class="n">message</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">textMessage</span><span class="o">);</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">savedInstanceState</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
         <span class="n">nbClics</span> <span class="o">=</span> <span class="n">savedInstanceState</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="s">&quot;nbClics&quot;</span><span class="o">);</span>
@@ -947,7 +952,7 @@ téléphonique :</p>
 <span class="k">if</span> <span class="o">(!</span> <span class="n">infos</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
     <span class="n">startActivity</span><span class="o">(</span><span class="n">intentAppel</span><span class="o">);</span>
 <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-    <span class="n">Snackbar</span><span class="o">.</span><span class="na">make</span><span class="o">(</span><span class="n">view</span><span class="o">,</span> <span class="s">&quot;Impossible d&#39;appeler&quot;</span><span class="o">,</span>  <span class="n">Snackbar</span><span class="o">.</span><span class="na">LENGTH_LONG</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+    <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="s">&quot;Impossible d&#39;appeler&quot;</span><span class="o">,</span>  <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_LONG</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
 <span class="o">}</span>
 </pre></div>
 </td></tr></table></div>
